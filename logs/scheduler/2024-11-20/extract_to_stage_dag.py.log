@@ -1,0 +1,444 @@
+[2024-11-20T23:19:11.583+0000] {processor.py:153} INFO - Started process (PID=70) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:19:11.584+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:19:11.586+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.585+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:19:11.806+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.806+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_veiculos>, load_incremental_data_veiculos already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.808+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.808+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_veiculos>, get_max_id_veiculos already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.811+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.811+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_estados>, load_incremental_data_estados already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.812+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.812+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_estados>, get_max_id_estados already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.815+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.814+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_cidades>, load_incremental_data_cidades already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.816+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.816+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_cidades>, get_max_id_cidades already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.819+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.819+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_concessionarias>, load_incremental_data_concessionarias already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.820+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.820+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_concessionarias>, get_max_id_concessionarias already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.823+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.823+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_vendedores>, load_incremental_data_vendedores already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.824+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.824+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_vendedores>, get_max_id_vendedores already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.827+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.827+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_clientes>, load_incremental_data_clientes already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.828+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.828+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_clientes>, get_max_id_clientes already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.831+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.831+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_vendas>, load_incremental_data_vendas already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.832+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:11.832+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_vendas>, get_max_id_vendas already registered for DAG: principal_to_stage
+[2024-11-20T23:19:11.869+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:19:12.283+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:12.283+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:principal_to_stage
+[2024-11-20T23:19:12.302+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:12.301+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:principal_to_stage
+[2024-11-20T23:19:12.321+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:12.320+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:principal_to_stage
+[2024-11-20T23:19:12.322+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:12.321+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:19:12.351+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:12.351+0000] {dag.py:2711} INFO - Creating ORM DAG for principal_to_stage
+[2024-11-20T23:19:12.376+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:12.376+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:19:12.375573+00:00, run_after=2024-11-20T23:19:12.375573+00:00
+[2024-11-20T23:19:12.429+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.851 seconds
+[2024-11-20T23:19:42.829+0000] {processor.py:153} INFO - Started process (PID=79) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:19:42.832+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:19:42.834+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.833+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:19:42.886+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.886+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_veiculos>, load_incremental_data_veiculos already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.887+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.887+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_veiculos>, get_max_id_veiculos already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.889+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.889+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_estados>, load_incremental_data_estados already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.889+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.889+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_estados>, get_max_id_estados already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.891+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.891+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_cidades>, load_incremental_data_cidades already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.891+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.891+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_cidades>, get_max_id_cidades already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.893+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.893+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_concessionarias>, load_incremental_data_concessionarias already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.893+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.893+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_concessionarias>, get_max_id_concessionarias already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.895+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.895+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_vendedores>, load_incremental_data_vendedores already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.895+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.895+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_vendedores>, get_max_id_vendedores already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.897+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.897+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_clientes>, load_incremental_data_clientes already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.897+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.897+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_clientes>, get_max_id_clientes already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.899+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.898+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_vendas>, load_incremental_data_vendas already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.899+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.899+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_vendas>, get_max_id_vendas already registered for DAG: principal_to_stage
+[2024-11-20T23:19:42.904+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:19:42.933+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.933+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:19:42.965+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:19:42.964+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:19:42.964626+00:00, run_after=2024-11-20T23:19:42.964626+00:00
+[2024-11-20T23:19:42.995+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.173 seconds
+[2024-11-20T23:20:13.092+0000] {processor.py:153} INFO - Started process (PID=87) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:20:13.095+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:20:13.096+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.096+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:20:13.141+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.141+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_veiculos>, load_incremental_data_veiculos already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.141+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.141+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_veiculos>, get_max_id_veiculos already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.143+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.143+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_estados>, load_incremental_data_estados already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.143+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.143+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_estados>, get_max_id_estados already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.144+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.144+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_cidades>, load_incremental_data_cidades already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.145+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.145+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_cidades>, get_max_id_cidades already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.146+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.146+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_concessionarias>, load_incremental_data_concessionarias already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.146+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.146+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_concessionarias>, get_max_id_concessionarias already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.148+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.147+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_vendedores>, load_incremental_data_vendedores already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.148+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.148+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_vendedores>, get_max_id_vendedores already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.150+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.150+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_clientes>, load_incremental_data_clientes already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.151+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.151+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_clientes>, get_max_id_clientes already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.153+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.152+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_vendas>, load_incremental_data_vendas already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.153+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.153+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_vendas>, get_max_id_vendas already registered for DAG: principal_to_stage
+[2024-11-20T23:20:13.158+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:20:13.185+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.185+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:20:13.214+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:13.214+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:20:13.214210+00:00, run_after=2024-11-20T23:20:13.214210+00:00
+[2024-11-20T23:20:13.239+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.151 seconds
+[2024-11-20T23:20:43.427+0000] {processor.py:153} INFO - Started process (PID=113) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:20:43.428+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:20:43.429+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.429+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:20:43.472+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.472+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_veiculos>, load_incremental_data_veiculos already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.473+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.473+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_veiculos>, get_max_id_veiculos already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.475+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.475+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_estados>, load_incremental_data_estados already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.475+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.475+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_estados>, get_max_id_estados already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.476+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.476+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_cidades>, load_incremental_data_cidades already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.477+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.477+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_cidades>, get_max_id_cidades already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.478+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.478+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_concessionarias>, load_incremental_data_concessionarias already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.478+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.478+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_concessionarias>, get_max_id_concessionarias already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.480+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.480+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_vendedores>, load_incremental_data_vendedores already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.480+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.480+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_vendedores>, get_max_id_vendedores already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.481+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.481+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_clientes>, load_incremental_data_clientes already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.482+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.482+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_clientes>, get_max_id_clientes already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.484+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.484+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_max_id_vendas>, load_incremental_data_vendas already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.484+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.484+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): load_incremental_data_vendas>, get_max_id_vendas already registered for DAG: principal_to_stage
+[2024-11-20T23:20:43.489+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:20:43.517+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.517+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:20:43.545+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:20:43.545+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:20:13.214210+00:00, run_after=2024-11-21T23:20:13.214210+00:00
+[2024-11-20T23:20:43.567+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.143 seconds
+[2024-11-20T23:21:10.790+0000] {processor.py:153} INFO - Started process (PID=121) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:21:10.792+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:21:10.793+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:21:10.793+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:21:10.859+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:21:10.929+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:21:10.929+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:21:10.959+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:21:10.958+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:21:10.993+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.206 seconds
+[2024-11-20T23:21:41.209+0000] {processor.py:153} INFO - Started process (PID=129) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:21:41.211+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:21:41.212+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:21:41.211+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:21:41.280+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:21:41.308+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:21:41.308+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:21:41.341+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:21:41.341+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:21:41.368+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.162 seconds
+[2024-11-20T23:22:11.410+0000] {processor.py:153} INFO - Started process (PID=137) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:22:11.412+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:22:11.413+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:22:11.412+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:22:11.466+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:22:11.495+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:22:11.495+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:22:11.522+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:22:11.522+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:22:11.549+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.142 seconds
+[2024-11-20T23:22:41.613+0000] {processor.py:153} INFO - Started process (PID=145) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:22:41.614+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:22:41.615+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:22:41.615+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:22:41.667+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:22:41.697+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:22:41.696+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:22:41.726+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:22:41.726+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:22:41.751+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.141 seconds
+[2024-11-20T23:23:11.968+0000] {processor.py:153} INFO - Started process (PID=154) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:11.969+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:23:11.971+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:11.970+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:12.034+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:12.065+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:12.065+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:23:12.101+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:12.101+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:23:12.135+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.171 seconds
+[2024-11-20T23:23:12.988+0000] {processor.py:153} INFO - Started process (PID=155) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:12.990+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:23:12.991+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:12.991+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:13.053+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:13.081+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:13.081+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:23:13.110+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:13.110+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:23:13.140+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.155 seconds
+[2024-11-20T23:23:17.029+0000] {processor.py:153} INFO - Started process (PID=163) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:17.030+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:23:17.032+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:17.032+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:17.101+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:17.132+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:17.132+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:23:17.167+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:17.167+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:23:17.208+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.182 seconds
+[2024-11-20T23:23:18.205+0000] {processor.py:153} INFO - Started process (PID=164) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:18.207+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:23:18.208+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:18.208+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:18.270+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:18.299+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:18.298+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:23:18.329+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:18.329+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:23:18.362+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.160 seconds
+[2024-11-20T23:23:21.269+0000] {processor.py:153} INFO - Started process (PID=165) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:21.270+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:23:21.271+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:21.271+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:21.362+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:21.400+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:21.400+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:23:21.431+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:21.431+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:23:21.464+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.199 seconds
+[2024-11-20T23:23:40.536+0000] {processor.py:153} INFO - Started process (PID=166) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:40.538+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:23:40.539+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:40.539+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:40.599+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:40.674+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:40.673+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:23:40.702+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:40.701+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:23:40.733+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.200 seconds
+[2024-11-20T23:23:45.811+0000] {processor.py:153} INFO - Started process (PID=167) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:45.812+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:23:45.814+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:45.813+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:45.873+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:23:45.888+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:45.888+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:23:45.917+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:23:45.917+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:23:45.950+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.145 seconds
+[2024-11-20T23:24:16.051+0000] {processor.py:153} INFO - Started process (PID=175) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:24:16.052+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:24:16.053+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:24:16.053+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:24:16.119+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:24:16.162+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:24:16.161+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:24:16.202+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:24:16.202+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:24:16.234+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.187 seconds
+[2024-11-20T23:24:46.362+0000] {processor.py:153} INFO - Started process (PID=183) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:24:46.365+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:24:46.366+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:24:46.366+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:24:46.448+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:24:46.486+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:24:46.486+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:24:46.530+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:24:46.530+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:24:46.583+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.226 seconds
+[2024-11-20T23:25:16.662+0000] {processor.py:153} INFO - Started process (PID=191) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:25:16.663+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:25:16.664+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:25:16.664+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:25:16.739+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:25:16.780+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:25:16.780+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:25:16.814+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:25:16.814+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:25:16.842+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.184 seconds
+[2024-11-20T23:25:47.003+0000] {processor.py:153} INFO - Started process (PID=206) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:25:47.004+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:25:47.005+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:25:47.005+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:25:47.059+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:25:47.094+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:25:47.094+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:25:47.132+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:25:47.131+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:25:47.161+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.161 seconds
+[2024-11-20T23:26:17.242+0000] {processor.py:153} INFO - Started process (PID=215) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:26:17.243+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:26:17.244+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:26:17.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:26:17.293+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:26:17.321+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:26:17.321+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:26:17.352+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:26:17.352+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:26:17.379+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.140 seconds
+[2024-11-20T23:26:47.578+0000] {processor.py:153} INFO - Started process (PID=223) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:26:47.579+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:26:47.580+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:26:47.580+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:26:47.631+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_postgres_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:26:47.661+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:26:47.660+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:26:47.687+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:26:47.687+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_postgres_stage to 2024-11-20T12:09:38.019552+00:00, run_after=2024-11-21T12:09:38.019552+00:00
+[2024-11-20T23:26:47.715+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.140 seconds
+[2024-11-20T23:27:00.671+0000] {processor.py:153} INFO - Started process (PID=224) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:27:00.673+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:27:00.674+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:00.674+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:27:00.738+0000] {processor.py:753} INFO - DAG(s) dict_keys(['postgres_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:27:00.811+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:00.811+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:27:00.838+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:00.838+0000] {dag.py:3441} INFO - Setting next_dagrun for postgres_to_stage to 2024-11-19T23:27:00.838325+00:00, run_after=2024-11-20T23:27:00.838325+00:00
+[2024-11-20T23:27:00.870+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.202 seconds
+[2024-11-20T23:27:06.868+0000] {processor.py:153} INFO - Started process (PID=225) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:27:06.869+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:27:06.870+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:06.870+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:27:06.937+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:27:07.007+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:07.006+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:27:07.020+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:07.020+0000] {dag.py:2711} INFO - Creating ORM DAG for principal_to_stage
+[2024-11-20T23:27:07.033+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:07.033+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:27:07.032865+00:00, run_after=2024-11-20T23:27:07.032865+00:00
+[2024-11-20T23:27:07.066+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.201 seconds
+[2024-11-20T23:27:37.141+0000] {processor.py:153} INFO - Started process (PID=233) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:27:37.143+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:27:37.144+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:37.143+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:27:37.201+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:27:37.232+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:37.232+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:27:37.262+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:27:37.261+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:27:37.261548+00:00, run_after=2024-11-20T23:27:37.261548+00:00
+[2024-11-20T23:27:37.290+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.153 seconds
+[2024-11-20T23:28:07.481+0000] {processor.py:153} INFO - Started process (PID=241) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:07.482+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:28:07.483+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:07.483+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:07.538+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:07.571+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:07.571+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:28:07.601+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:07.600+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:28:07.600713+00:00, run_after=2024-11-20T23:28:07.600713+00:00
+[2024-11-20T23:28:07.628+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.150 seconds
+[2024-11-20T23:28:14.544+0000] {processor.py:153} INFO - Started process (PID=242) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:14.546+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:28:14.547+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:14.547+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:14.611+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:14.606+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/extract_to_stage_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_to_stage_dag.py", line 60, in <module>
+    postgres_to_postgres_etl_dag = postgres_to_postgres_etl()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 3555, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/extract_to_stage_dag.py", line 26, in postgres_to_postgres_etl
+    for table_name in table_names:
+NameError: name 'table_names' is not defined
+[2024-11-20T23:28:14.614+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:14.638+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.097 seconds
+[2024-11-20T23:28:17.587+0000] {processor.py:153} INFO - Started process (PID=250) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:17.588+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:28:17.591+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:17.590+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:17.664+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:17.694+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:17.693+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:28:17.724+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:17.724+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:28:17.723696+00:00, run_after=2024-11-20T23:28:17.723696+00:00
+[2024-11-20T23:28:17.757+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.173 seconds
+[2024-11-20T23:28:46.884+0000] {processor.py:153} INFO - Started process (PID=251) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:46.885+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:28:46.886+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:46.886+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:46.977+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:47.095+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:47.095+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:28:47.127+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:47.127+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:28:47.127473+00:00, run_after=2024-11-20T23:28:47.127473+00:00
+[2024-11-20T23:28:47.161+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.281 seconds
+[2024-11-20T23:28:49.980+0000] {processor.py:153} INFO - Started process (PID=259) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:49.982+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:28:49.983+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:49.983+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:50.041+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:50.035+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/extract_to_stage_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_to_stage_dag.py", line 60, in <module>
+    postgres_to_postgres_etl_dag = postgres_to_postgres_etl()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 3555, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/extract_to_stage_dag.py", line 58, in postgres_to_postgres_etl
+    load_incremental_data(table_name, max_id)
+NameError: name 'load_incremental_data' is not defined
+[2024-11-20T23:28:50.043+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:50.066+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.088 seconds
+[2024-11-20T23:28:58.151+0000] {processor.py:153} INFO - Started process (PID=260) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:58.153+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:28:58.154+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:58.154+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:58.222+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:58.215+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/extract_to_stage_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_to_stage_dag.py", line 60, in <module>
+    postgres_to_postgres_etl_dag = postgres_to_postgres_etl()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 3555, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/extract_to_stage_dag.py", line 58, in postgres_to_postgres_etl
+    loa_data(table_name, max_id)
+NameError: name 'loa_data' is not defined
+[2024-11-20T23:28:58.224+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:58.246+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.097 seconds
+[2024-11-20T23:28:59.289+0000] {processor.py:153} INFO - Started process (PID=261) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:59.290+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:28:59.291+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:59.291+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:59.358+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:28:59.374+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:59.374+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:28:59.405+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:28:59.405+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:28:59.405399+00:00, run_after=2024-11-20T23:28:59.405399+00:00
+[2024-11-20T23:28:59.440+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.154 seconds
+[2024-11-20T23:29:14.443+0000] {processor.py:153} INFO - Started process (PID=262) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:29:14.444+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:29:14.445+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:29:14.445+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:29:14.510+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:29:14.525+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:29:14.525+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:29:14.560+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:29:14.560+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:29:14.559949+00:00, run_after=2024-11-20T23:29:14.559949+00:00
+[2024-11-20T23:29:14.592+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.152 seconds
+[2024-11-20T23:29:16.582+0000] {processor.py:153} INFO - Started process (PID=263) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:29:16.583+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:29:16.585+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:29:16.584+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:29:16.709+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:29:16.732+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:29:16.731+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:29:16.781+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:29:16.781+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-19T23:29:16.781332+00:00, run_after=2024-11-20T23:29:16.781332+00:00
+[2024-11-20T23:29:16.821+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.243 seconds
+[2024-11-20T23:29:46.881+0000] {processor.py:153} INFO - Started process (PID=284) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:29:46.883+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:29:46.884+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:29:46.884+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:29:46.979+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:29:47.021+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:29:47.021+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:29:47.063+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:29:47.063+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:29:47.097+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.221 seconds
+[2024-11-20T23:30:17.293+0000] {processor.py:153} INFO - Started process (PID=316) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:30:17.294+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:30:17.296+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:30:17.296+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:30:17.351+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:30:17.382+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:30:17.382+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:30:17.413+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:30:17.412+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:30:17.439+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.149 seconds
+[2024-11-20T23:30:47.542+0000] {processor.py:153} INFO - Started process (PID=324) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:30:47.544+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:30:47.546+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:30:47.545+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:30:47.608+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:30:47.644+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:30:47.643+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:30:47.690+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:30:47.690+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:30:47.732+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.192 seconds
+[2024-11-20T23:31:17.870+0000] {processor.py:153} INFO - Started process (PID=332) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:31:17.871+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:31:17.872+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:31:17.872+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:31:17.938+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:31:17.970+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:31:17.970+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:31:18.002+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:31:18.002+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:31:18.029+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.163 seconds
+[2024-11-20T23:31:48.149+0000] {processor.py:153} INFO - Started process (PID=340) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:31:48.150+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:31:48.151+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:31:48.151+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:31:48.207+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:31:48.255+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:31:48.254+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:31:48.299+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:31:48.299+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:31:48.330+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.184 seconds
+[2024-11-20T23:32:18.456+0000] {processor.py:153} INFO - Started process (PID=348) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:32:18.458+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:32:18.461+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:32:18.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:32:18.528+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:32:18.557+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:32:18.557+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:32:18.590+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:32:18.590+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:32:18.617+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.166 seconds
+[2024-11-20T23:32:48.795+0000] {processor.py:153} INFO - Started process (PID=356) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:32:48.799+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:32:48.801+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:32:48.800+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:32:48.887+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:32:48.932+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:32:48.932+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:32:48.971+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:32:48.971+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:32:49.002+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.212 seconds
+[2024-11-20T23:33:19.048+0000] {processor.py:153} INFO - Started process (PID=364) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:33:19.050+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:33:19.051+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:33:19.051+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:33:19.101+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:33:19.133+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:33:19.133+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:33:19.161+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:33:19.161+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:33:19.186+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.140 seconds
+[2024-11-20T23:33:49.247+0000] {processor.py:153} INFO - Started process (PID=372) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:33:49.249+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:33:49.250+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:33:49.250+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:33:49.303+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:33:49.332+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:33:49.331+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:33:49.367+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:33:49.367+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:33:49.392+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.148 seconds
+[2024-11-20T23:34:19.646+0000] {processor.py:153} INFO - Started process (PID=380) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:34:19.647+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:34:19.648+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:34:19.648+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:34:19.699+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:34:19.727+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:34:19.727+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:34:19.754+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:34:19.754+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:34:19.782+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.139 seconds
+[2024-11-20T23:34:49.859+0000] {processor.py:153} INFO - Started process (PID=388) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:34:49.861+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:34:49.862+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:34:49.862+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:34:49.913+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:34:49.941+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:34:49.941+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:34:49.971+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:34:49.970+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:34:49.997+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.141 seconds
+[2024-11-20T23:35:20.192+0000] {processor.py:153} INFO - Started process (PID=396) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:35:20.193+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:35:20.194+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:35:20.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:35:20.247+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:35:20.277+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:35:20.276+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:35:20.306+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:35:20.306+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:35:20.334+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.144 seconds
+[2024-11-20T23:35:50.396+0000] {processor.py:153} INFO - Started process (PID=404) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:35:50.398+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:35:50.399+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:35:50.399+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:35:50.452+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:35:50.483+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:35:50.483+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:35:50.517+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:35:50.516+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:35:50.547+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.154 seconds
+[2024-11-20T23:36:20.752+0000] {processor.py:153} INFO - Started process (PID=412) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:36:20.753+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:36:20.755+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:36:20.754+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:36:20.805+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:36:20.838+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:36:20.837+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:36:20.866+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:36:20.866+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:36:20.893+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.143 seconds
+[2024-11-20T23:36:50.964+0000] {processor.py:153} INFO - Started process (PID=420) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:36:50.965+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:36:50.966+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:36:50.966+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:36:51.017+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:36:51.045+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:36:51.045+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:36:51.072+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:36:51.072+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:36:51.096+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.136 seconds
+[2024-11-20T23:37:21.309+0000] {processor.py:153} INFO - Started process (PID=428) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:37:21.311+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:37:21.312+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:37:21.312+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:37:21.384+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:37:21.413+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:37:21.412+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:37:21.441+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:37:21.441+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:37:21.470+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.164 seconds
+[2024-11-20T23:37:51.513+0000] {processor.py:153} INFO - Started process (PID=436) to work on /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:37:51.515+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/extract_to_stage_dag.py for tasks to queue
+[2024-11-20T23:37:51.515+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:37:51.515+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:37:51.568+0000] {processor.py:753} INFO - DAG(s) dict_keys(['principal_to_stage']) retrieved from /opt/airflow/dags/extract_to_stage_dag.py
+[2024-11-20T23:37:51.598+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:37:51.598+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-11-20T23:37:51.629+0000] {logging_mixin.py:137} INFO - [2024-11-20T23:37:51.629+0000] {dag.py:3441} INFO - Setting next_dagrun for principal_to_stage to 2024-11-20T23:29:16.781332+00:00, run_after=2024-11-21T23:29:16.781332+00:00
+[2024-11-20T23:37:51.659+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/extract_to_stage_dag.py took 0.148 seconds
