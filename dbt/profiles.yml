@@ -1,0 +1,14 @@
+#conexao dando erro - 
+
+
+novadrive:
+  outputs:
+    dev:
+      type: postgres
+      host: localhost #testei como host.docker.internal também caso ele tenha se perdido pelo contêiner 
+      port: 5432
+      user: postgres
+      password: senha
+      dbname: novadrive_stage
+      schema: public
+  target: dev

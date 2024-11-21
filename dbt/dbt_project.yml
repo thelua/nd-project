@@ -1,0 +1,21 @@
+name: novadrive_stage
+version: 1.0.0
+config-version: 2
+
+profile: novadrive  
+
+model-paths: ["models"]  
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
+
+models:
+  novadrive_stage:
+    +schema: public 
+  
+    staging:
+      +materialized: view 
+    fact:
+      +materialized: incremental  
+    dimension:
+      +materialized: table
+
