@@ -19,8 +19,6 @@ default_args = {
 )
 
 
-
-
 def postgres_to_postgres_etl():
     tables = ['veiculos', 'estados', 'cidades', 'concessionarias', 'vendedores', 'clientes', 'vendas']
     
